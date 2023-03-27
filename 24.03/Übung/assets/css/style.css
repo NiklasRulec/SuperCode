@@ -1,0 +1,96 @@
+*{
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* hier kann man den ersten Buchstaben stylen */
+section p:last-of-type::first-letter{
+    font-size: 30px;
+    background-color: orange;
+}
+
+section p:first-of-type::first-line{
+    background-color: lightgreen;
+}
+
+
+*::selection{
+    background-color: purple;
+    color: white;
+}
+
+article ul{
+    margin: 0 0 0 50px;
+}
+
+article li::marker{
+    content: " - ";
+}
+
+h2::before{
+    content: "Hallo Leute";
+    font-size: 50px;
+}
+
+h2::after{
+    content: "Hallo123";
+}
+
+/* section a{
+    background-color: orange;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+section a:hover{
+    background-color: rgb(124, 81, 0);
+    border: 2px solid black;
+}
+
+section a:active{
+    background-color: white;
+    color: black;
+} */
+
+section:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.header-red-section{
+    background-color: red;
+}
+
+.main-btn{
+    background-color: green;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.main-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+#ich-bin-eine-id{
+    background-color: bisque;
+}
+
+/* img{
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+} */
+
+.bg-image{
+    background: url(https://images.pexels.com/photos/1179229/pexels-photo-1179229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) no-repeat center;
+    height: 300px;
+    width: 90vw;
+    background-size: cover;
+    margin: 15px auto;
+}

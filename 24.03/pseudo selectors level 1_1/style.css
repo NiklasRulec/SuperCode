@@ -1,0 +1,15 @@
+
+
+a:visited{
+    color: #FCB941;
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #7E3661;
+}
+
+a:active{
+    font-size: 3em;
+}

@@ -1,0 +1,50 @@
+@font-face {
+    font-family: SuperFont;
+    src: url("./DeliciousHandrawn-Regular.ttf");
+}
+
+h4{
+    color: red;
+    text-decoration: line-through;
+}
+
+span{
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+ol li:nth-child(3){
+    color: red;
+}
+
+h2:first-of-type{
+    color: orange;
+}
+
+div{
+    height: 400px;
+    background-color: black;
+    width: 500px;
+}
+
+div:first-of-type{
+    background-image: url("japan.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* background: url() center no-repeat; */
+}
+
+h1{
+    font-family: 'SuperFont', sans-serif;
+}
+
+h5{
+    font-family: SuperFont;
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-align: center;
+    text-shadow: 10px 10px 10px red;
+}
+

@@ -1,0 +1,74 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&family=Pacifico&family=Shadows+Into+Light&display=swap');
+
+
+h1{
+    background-color: black;
+    color: white;
+    text-shadow: 3px 3px 1px red;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h2{
+    background-color: lightgreen;
+    word-spacing: 10px;
+    font-family: 'Pacifico', cursive;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    word-spacing: 10px;
+}
+
+strong{
+    color: yellow;
+    word-spacing: 3px;
+}
+
+em{
+    color: red;
+    word-spacing: 3px;
+}
+
+h3{
+    font-size: 30px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+main p{
+    text-align: justify;
+    word-spacing: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+ol{
+    text-transform: uppercase;
+    line-height: 40px;
+    color: pink;
+}
+
+h4{
+    background-color: yellow;
+    font-size: 40px;
+    text-align: right;
+    text-shadow: -7px 2px 1px lightgray;
+    font-family: 'Pacifico', cursive;
+}
+
+h5{
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+ul{
+    background-color: lightgrey;
+}
+
+li{
+    line-height: 40px;
+}

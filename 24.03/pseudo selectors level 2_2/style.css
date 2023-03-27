@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat&family=Raleway&display=swap');
+
+h3:hover{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li:nth-of-type(1){
+    font-family: Tahoma;
+    color: #4e342e;
+}
+li:nth-of-type(2){
+    font-family: 'Montserrat';
+    color: #689f38;
+}
+li:nth-of-type(3){
+    font-family: 'Raleway';
+    color: #ef5350;
+}
+
+p:first-of-type{
+    color: #999;
+}
+
+p{
+    font-size: 26px;
+}
+
+p:nth-of-type(2),
+p:nth-of-type(4),
+p:nth-of-type(6){
+    color: #0277bd;
+}
+
+p:last-of-type{
+    font-size: 15px;
+}
+
+button{
+    background-image: linear-gradient(red, yellow);
+}
+
+button:hover{
+    background-image: linear-gradient(aqua, gray);
+    font-size: 30px;
+    color: white;
+}
+
+button:active{
+    background-image: linear-gradient(blue, pink);
+    color:yellow;
+}

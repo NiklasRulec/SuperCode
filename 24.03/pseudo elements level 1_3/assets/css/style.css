@@ -1,0 +1,66 @@
+h1::first-letter{
+    color: #00796B;
+    font-size: 3em;
+}
+
+h1:hover::first-letter{
+    color: #4fc3f7;
+}
+
+/* Before Icons */
+p:nth-of-type(1):before,
+p:nth-of-type(2):before{
+    content:url('../check.png');
+}
+
+p:nth-of-type(3):before,
+p:nth-of-type(4):before{
+    content:url('../doing.png');
+}
+
+p:nth-of-type(5):before,
+p:nth-of-type(6):before{
+    content:url('../no.png');
+}
+
+/* After Icons */
+p:nth-of-type(1):after{
+    content:url('../gym.png');
+}
+
+p:nth-of-type(2):after{
+    content:url('../bill.png');
+}
+
+p:nth-of-type(3):after{
+    content:url('../dance.png');
+}
+
+p:nth-of-type(4):after{
+    content:url('../eat.png');
+}
+
+p:nth-of-type(5):after{
+    content:url('../book.png');
+}
+
+p:nth-of-type(6):after{
+    content:url('../organize.png');
+}
+
+
+/* Text Deco / Background */
+p:nth-of-type(1),
+p:nth-of-type(2){
+    text-decoration: line-through;
+}
+
+p:nth-of-type(3),
+p:nth-of-type(4){
+    background-color: orange;
+}
+
+p:nth-of-type(5),
+p:nth-of-type(6){
+    text-decoration: underline;
+}

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  margin-left: 100px;
+  font-family: "Cinzel";
+  line-height: 25px;
+  font-size: 18px;
+  color: #999999;
+}
+
+.background {
+  height: 577px;
+  width: 100vw;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://images.unsplash.com/photo-1519931760384-a96fedd8dfa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Cinzel";
+  font-size: 50px;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+}
+
+article img {
+  height: 200px;
+  width: 360px;
+  margin: 30px 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+article img:hover {
+  transform: scale(1.1);
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Cinzel";
+}
+
+p {
+  font-family: "Poppins";
+  font-size: 16px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  max-width: 900px;
+}
+
+span.red {
+  color: red;
+}
+
+span.green {
+  color: green;
+}
+
+p.tour-dates {
+  text-align: left;
+}
+
+footer section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer section img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+footer section img:hover {
+    transform: scale(1.1);
+  }

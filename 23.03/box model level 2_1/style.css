@@ -1,0 +1,54 @@
+
+h1{
+    border: 2px dashed black;
+    border-radius: 20px;
+    padding:10px;
+    text-align: center;
+}
+
+p:nth-of-type(1),
+p:nth-of-type(2),
+p:nth-of-type(3),
+p:nth-of-type(4),
+p:nth-of-type(5),
+p:nth-of-type(6){
+    border: 2px solid orange;
+    padding: 20px;
+    color:blueviolet
+}
+
+h2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+ol, ul{
+    border: 2px dotted greenyellow;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li{
+    text-decoration: underline;
+}
+
+h3{
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid greenyellow;
+    border-radius: 10px;
+    outline: 3px solid greenyellow;
+    outline-offset: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
