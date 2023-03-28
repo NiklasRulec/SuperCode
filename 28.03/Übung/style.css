@@ -1,0 +1,72 @@
+/* 1rem = 16px */
+
+:root {
+  --hauptfarbe: rgb(255, 0, 221);
+  --zweitfarbe: rgb(155, 155, 155);
+  --textfarbe: black;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  font-size: 2rem;
+}
+
+h1 {
+  color: var(--hauptfarbe);
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-family: "Gill Sans";
+}
+
+#eins {
+  background-color: orange;
+  font-size: 3em;
+}
+
+#zwei {
+  background-color: green;
+}
+
+#drei {
+  background-color: brown;
+}
+
+header {
+  background: url("https://images4.alphacoders.com/969/96964.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+main section {
+  height: 100vh;
+}
+
+p {
+  font-size: clamp(1rem, 1.8vw, 2rem);
+}
+
+.pro {
+  background-color: yellowgreen;
+  height: 250px;
+  width: 50%;
+}
+
+.vw {
+  background-color: blueviolet;
+  height: 250px;
+  width: 50vw;
+  color: var(--hauptfarbe);
+}
