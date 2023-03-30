@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Was ist Display-Flex?
+    Es hilft uns beim ausrichten benachbarter Elemente */
+
+header {
+  display: flex;
+  height: 500px;
+  border: 2px solid black;
+
+  /* Horizontale Ausrichtung */
+
+  /* default - Elemente werden zur Startlinie gepackt */
+  /* justify-content: flex-start; */
+
+  /* Elemente werden rechtsbündig */
+  /* justify-content: flex-end; */
+
+  /* Elemente werden mittig zentriert */
+  /* justify-content: center; */
+
+  /* Elemente werden gleichmäßig in der Zeile mit gleichem Abstand um Sie herum verteilt */
+  /* justify-content: space-around; */
+
+  /* Das erste und letzte Element werden an die äußeren Enden gerückt*/
+  /* justify-content: space-between; */
+
+  /* Der Abstand der Elemente ist zu allen Seiten gleich*/
+  justify-content: space-evenly;
+
+  /* default - Wert*/
+  /* align-items: flex-start; */
+
+  /* Ausrichtung zum unteren Ende des Elements */
+  /* align-items: flex-end; */
+
+  /* Elemente werden vertikal mittig zentriert */
+  /* align-items: center; */
+
+  /* Elemente werden auf ihre Grundlinie ausgerichtet */
+  /* align-items: baseline; */
+
+  /* default - Die Zeilen werden am Anfang des Container ausgerichtet */
+  /* align-content: start; */
+
+  flex-wrap: wrap;
+
+  /* default - Inhalt wird an der obersten Stelle ausgerichtet*/
+  /* align-items: start; */
+
+  /* Inhalt wird an der untersten Stelle ausgerichtet*/
+  /* align-content: flex-end; */
+
+  align-content: center;
+
+  align-content: space-between;
+
+
+}
+
+header section {
+  width: 300px;
+}
+
+.text-container {
+  background-color: deeppink;
+  height: 200px;
+}
+
+/* +++++++ navigation +++++++ */
+
+h1{
+    background-color: blue;
+}
+
+nav{
+    background-color: chartreuse;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 5px 8px;
+    background-color: aqua;
+}
+
+/* +++++++ div section begin +++++++ */
+
+.div-section{
+    display: flex;
+    background-color: darkred;
+    margin-top: 5vh;
+
+    /* justify-content: space-around; */
+
+    /* default */
+    /* flex-direction: row; */
+
+    column-gap: 5em;
+    row-gap: 5em;
+}
+
+.flex-element{
+    height: 200px;
+    width: 200px;
+    /* margin: 5px; */
+    color: black;
+    font-size: 2rem;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-div{
+    display: flex;
+    flex-wrap: wrap;
+    /* row-gap: 2em;
+    column-gap: 5em; */
+    gap: 5em;
+}
+
+.flex-element:nth-of-type(1) {order: 2;}
+.flex-element:nth-of-type(2) {order: 1;}
+.flex-element:nth-of-type(3) {order: 5;}
+.flex-element:nth-of-type(4) {order: 3;}
+.flex-element:nth-of-type(5) {order: 4;}
+
+.img-section{
+    display: flex;
+    column-gap: 5rem;
+    justify-content: space-evenly;
+}

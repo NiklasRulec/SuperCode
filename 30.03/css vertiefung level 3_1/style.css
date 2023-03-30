@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    text-decoration: none;
+}
+
+
+/* ++++++++++ Header ++++++++++ */
+
+header{
+    height: 76px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 2vh 1vw 2vh 1vw
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    padding: 0 2vw;
+}
+
+.logo{
+    color: #666;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.logo:hover{
+    color: #333;
+}
+
+a{
+    color: #333;
+}
+
+a:hover{
+    color: #337ab7;
+}
+
+hr:nth-of-type(1){
+    border-color: black;
+    width: 90vw;
+    margin: 1vh auto;
+}
+hr:nth-of-type(2){
+    color: #acacac;
+    width: 90vw;
+    margin: auto;
+}
+
+/* ++++++++++ Section 1 ++++++++++ */
+
+.sec1{
+    width: 100vw;
+    height: 100vh;
+    background: url(https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/03/photo-1443527216320-7e744084f5a7-1.jpg)no-repeat center;
+    background-size: cover;
+}
+
+.layer{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3333332c;
+    justify-content: center;
+    align-items: center;
+}
+
+.content1{
+    text-align: center;
+    color: white;
+}
+
+.content1 h1{
+    font-size: 4rem;
+    font-weight: 300;
+    padding-bottom: 3vh;
+}
+
+.content1 p{
+    font-size: 1rem;
+    font-weight: 300;
+    padding-bottom: 6vh;
+}
+
+.link-wrapper a:nth-of-type(1){
+    padding: 20px 60px;
+    width: 10vw;
+    height: 30%;
+    border: 2px solid #745cf9;
+    background-color: #745cf9;
+    color: white;
+    text-transform: uppercase;
+}
+
+.link-wrapper a:nth-of-type(1):hover{
+    padding: 20px 60px;
+    border: 2px solid #5234f9;
+    background-color: #5234f9;
+    color: white;
+    text-transform: uppercase;
+}
+
+.link-wrapper a:nth-of-type(2){
+    padding: 20px 50px;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+}
