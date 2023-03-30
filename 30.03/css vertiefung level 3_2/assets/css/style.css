@@ -64,7 +64,7 @@ a{
 /* ++++++++++ Main ++++++++++*/
 
 .wrapper{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: #D9E8E5;
     display: flex;
@@ -90,7 +90,7 @@ h2{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 25vw;
+    min-width: 30vw;
     height: 250px;
     background: url(../img/ring003.png)no-repeat center;
     background-size: cover;
@@ -101,7 +101,7 @@ h2{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 25vw;
+    min-width: 30vw;
     height: 250px;
     background: url(../img/ring002.png)no-repeat center;
     background-size: cover;
@@ -112,7 +112,7 @@ h2{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 25vw;
+    min-width: 30vw;
     height: 250px;
     background: url(../img/ring001.png)no-repeat center;
     background-size: cover;
@@ -123,7 +123,7 @@ h2{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 25vw;
+    min-width: 30vw;
     height: 250px;
     background: url(../img/ring006.png)no-repeat center;
     background-size: cover;
@@ -134,7 +134,7 @@ h2{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 25vw;
+    min-width: 30vw;
     height: 250px;
     background: url(../img/ring005.png)no-repeat center;
     background-size: cover;
@@ -145,7 +145,7 @@ h2{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 25vw;
+    min-width: 30vw;
     height: 250px;
     background: url(../img/ring004.png)no-repeat center;
     background-size: cover;
