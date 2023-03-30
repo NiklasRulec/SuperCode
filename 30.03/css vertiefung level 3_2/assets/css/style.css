@@ -11,16 +11,17 @@
 /* ++++++++++ Header ++++++++++*/
 
 header{
-    height: 5vh;
+    height: 6vh;
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .logo{
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 18;
 }
 
 img{
@@ -38,9 +39,15 @@ nav{
     align-items: center;
 }
 
+.links{
+    display: flex;
+    justify-content: space-between;
+    width: 78vw;
+    padding: 0 2vw;
+}
+
 ul{
     display: flex;
-    justify-content: space-around;
     list-style: none;
 }
 
