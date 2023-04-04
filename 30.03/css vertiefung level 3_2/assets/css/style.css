@@ -74,6 +74,10 @@ a{
     align-content: center;
 }
 
+main{
+    flex-wrap: wrap;
+}
+
 h2{
     text-align: left;
     margin: 1vh 5px;

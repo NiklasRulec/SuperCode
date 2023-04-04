@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Register form</legend>
+        <table>
+          <tr>
+            <td><label for="">Name</label></td>
+            <td><input type="”text”" placeholder="Name" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Surname</label></td>
+            <td><input type="”text”" placeholder="Surname" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Email</label></td>
+            <td><input type="”text”" placeholder="Email" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Gender</label></td>
+            <td><input type="radio" name="gender" value="male" />Male</td>
+            <td><input type="radio" name="gender" value="female" />Female</td>
+          </tr>
+          <tr>
+            <td><label for="">Picture</label></td>
+            <td><input type="file" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Country</label></td>
+            <td>
+              <select name="country" id="country">
+                <option value="germany">Germany</option>
+                <option value="france">France</option>
+                <option value="spain">Spain</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lang">Preferred languages</label></td>
+            <td><select multiple name="lang" id="lang">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JS</option>
+                <option value="react">React</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="activity">Field of activity</label></td>
+            <td><input type="checkbox" name="activity" id="it" />IT</td>
+            <td><input type="checkbox" name="activity" id="design" />Design</td>
+            <td><input type="checkbox" name="activity" id="other" />Other</td>
+          </tr>
+          <tr>
+            <td><button>Send</button></td>
+            <td><button>Cancel</button></td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

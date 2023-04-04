@@ -1,0 +1,22 @@
+input {
+  width: 200px;
+  background-color: orange;
+  accent-color: red;
+}
+label {
+  display: block;
+}
+
+input[type="number"] {
+  height: 100px;
+}
+
+textarea {
+  background-color: blue;
+  width: 200px;
+  max-width: 200px;
+  min-width: 200px;
+  height: 50px;
+  max-height: 50px;
+  min-height: 50px;
+}

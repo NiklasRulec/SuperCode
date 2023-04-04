@@ -1,0 +1,58 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+input{
+    width: 200px;
+    height: 25px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+input:nth-of-type(1),
+input:nth-of-type(2){
+    display: inline;
+}
+
+label:nth-of-type(1):after,
+label:nth-of-type(2):after,
+label:nth-of-type(5):after
+{
+    color: red;
+    content: "*";
+}
+
+input[type=email]{
+    width: 400px;
+}
+
+select{
+    margin-bottom: 10px;
+    width: 400px;
+    display: block;
+}
+
+textarea{
+    width: 400px;
+    display: block;
+    margin-bottom: 10px
+}
+
+button{
+    background-color: lightseagreen;
+    color: white;
+    width: 400px;
+    padding: 10px 0;
+}
+
+button:hover{
+    background-color: darkblue;
+    color: white;
+    width: 400px;
+    padding: 10px 0;
+}

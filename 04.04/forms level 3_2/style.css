@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial ;
+}
+
+.center{
+    display: flex;
+    justify-content: center;align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card-bg{
+    background-color:#333;
+    width: 400px;
+    height: 450px;
+    padding: 10px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+button{
+    display: block;
+    margin: 20px auto;
+    background-color: seagreen;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 5px;
+    width: 350px;
+    padding: 20px;
+}
+
+/* ++++++++++ Sign Up ++++++++++ */
+
+.btn-log{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 20px 30px;
+    width: 172px;
+    height: 60px;
+}
+
+.btn-log:nth-of-type(2){
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: seagreen;
+    padding: 20px 30px;
+    width: 172px;
+    height: 60px;
+}
+
+.btn-log:hover{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: lime;
+    padding: 20px 30px;
+    width: 172px;
+    height: 60px;
+}
+
+.btn-log:active{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: #333;
+    padding: 20px 30px;
+    width: 172px;
+    height: 60px;
+}
+
+.form-bg1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-bg1 input{
+    margin: 10px auto;
+    background-color: #333;
+    border: 1px solid white;
+    padding: 10px;
+    margin: px 5px;
+}
+
+.form-bg1 input[type=text]{
+    width: 173px;
+}
+
+.form-bg1 input[type=email],
+.form-bg1 input[type=password]{
+    display: block;
+    width: 350px;
+}
+
+/* ++++++++++ Sign In ++++++++++ */
+
+.btn-sign{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 20px 30px;
+    width: 172px;
+    height: 60px;
+}
+
+.btn-sign:nth-of-type(1){
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: green;
+    padding: 20px 30px;
+    width: 172px;
+    height: 60px;
+}
+
+.btn-sign:hover{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: lime;
+    padding: 20px 30px;
+    width: 172px;
+    height: 60px;
+}
+
+.btn-sign:active{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: #333;
+    padding: 20px 30px;
+    width: 172px;
+    height: 60px;
+}
+
+.form-bg2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-bg2 input{
+    margin: 10px auto;
+    background-color: #333;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 5px 5px;
+}
+
+.form-bg2 input[type=email],
+.form-bg2 input[type=password]{
+    display: block;
+    width: 350px;
+}
+
+.forget-bg{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.forget{
+    text-align: right;
+    text-decoration: underline;
+    color: green;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+}
+
+.forget:hover{
+    text-align: right;
+    text-decoration: underline;
+    color: green;
+    background-color: #333;
+    font-size: 15px;
+    padding: 10px 20px;
+    width: 200px;
+    height: 30px;
+}
