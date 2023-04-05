@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+
+.overflow {
+  background-color: coral;
+  /* height: 400px;
+    overflow: hidden;
+    overflow: visible; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.overflow div {
+  width: 45vw;
+}
+.overflow img {
+  width: 45vw;
+}
+
+/* !Desktop -> Handy nutzen wir max-width */
+/* !Handy -> Desktop nutzen wir min-width */
+
+/*? Handy ab 576px */
+/*? Tablet ab 768px */
+/*? Desktop ab 992px */
+
+@media only screen and (max-width: 992px) {
+  .overflow {
+    background-color: limegreen;
+    flex-direction: column;
+    padding: 20px 30px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .overflow img {
+    width: auto;
+  }
+  .burger-wrap {
+    display: block;
+  }
+  header nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .overflow {
+    background-color: blueviolet;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .overflow {
+    background-color: red;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+/* ++++++++++ Header ++++++++++ */
+
+header {
+  background-color: gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* ++++++++++ Box ++++++++++ */
+
+.box {
+  background-color: gray;
+  padding: 30px;
+  height: 500px;
+  margin: 30px;
+  position: relative;
+}
+
+.box img {
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+/* ++++++++++ Top Btn ++++++++++ */
+
+.top {
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.burger-wrap {
+  height: 10px;
+  width: 10px;
+  position: fixed;
+  margin: 2px;
+  top: 30px;
+  right: 30px;
+  display: none;
+}
+
+.burger-wrap {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/2048px-Hamburger_icon.svg.png)
+    no-repeat center;
+  width: 30px;
+  height: 30px;
+}
