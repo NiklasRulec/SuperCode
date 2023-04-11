@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 10;
+    box-sizing: border-box;
+}
+
+
+section{
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "main main aside aside"
+    "main main side1 side2";
+    gap: 20px;
+    height: 100vh;
+}
+
+div{
+    border-radius: 10px;
+}
+
+.rot{
+    background-color: red;
+    grid-area: header;
+}
+
+.blau{
+    background-color: blue;
+    grid-area: main;
+}
+
+.grün{
+    background-color: green;
+    grid-area: aside;
+}
+
+.lila1{
+    background-color: purple;
+    grid-area: side1;
+}
+
+.lila2{
+    background-color: purple;
+    grid-area: side2;
+}
