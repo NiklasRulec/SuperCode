@@ -1,0 +1,15 @@
+section{
+    width: 100vw;
+    height: 100vh;
+}
+
+div{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transition: 2s;
+}
+
+div:hover{
+    width: 100vw;
+}

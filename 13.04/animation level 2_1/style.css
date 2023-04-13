@@ -1,0 +1,47 @@
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 100vh;
+    background-color: red;
+    margin: 5px;
+}
+
+.eins {
+    animation:strobo 2s infinite alternate;
+}
+.zwei {
+    animation:strobo 1s infinite alternate;
+}
+.drei {
+    animation:strobo .5s infinite alternate;
+}
+.vier {
+    animation:strobo .25s infinite alternate;
+}
+.fünf {
+    animation:strobo .125s infinite alternate;
+}
+
+@keyframes strobo{
+
+    0%{
+        background-color: black;
+        color: white;
+    }
+
+    100%{
+        background-color: white;
+        color: black;
+    }
+    
+}

@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100vw;
+    height: 250px;
+    background-color: lightgray;
+}
+
+section:hover div{
+    left: 90%;
+}
+
+div:nth-of-type(1){
+    position:absolute;
+    left: 0;
+    width: 100px;
+    height: 100px;
+}
+
+div:nth-of-type(2){
+    position:absolute;
+    left: 0;
+    top: 150px;
+    width: 100px;
+    height: 100px;
+}
+
+.rot{
+    background-color: red;
+    transition: 2s ease-in-out;
+}
+
+.grün{
+    background-color: green;
+    transition: 1s 1s ease-in-out;
+}

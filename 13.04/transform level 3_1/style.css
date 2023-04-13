@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100px;
+}
+
+.img{
+    padding: 5px;
+}
+
+h3{
+    padding-bottom: 5px;
+}
+
+p{
+    padding: 5px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    perspective: 1000px;
+}
+
+article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 5px auto;
+    transform:
+    rotateX(20deg)
+    rotateY(-20deg) 
+    rotateZ(10deg);
+    transition: .5s ease-in-out;
+}
+
+article:hover{
+    transform: 
+    rotateX(10deg) 
+    rotateY(-10deg) 
+    rotateZ(5deg);
+}
+
+.eins{
+    background-color: lightskyblue;
+}
+
+.zwei{
+    background-color: lightgoldenrodyellow;
+}
+
+.drei{
+    background-color: pink;
+}

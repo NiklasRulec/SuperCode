@@ -1,0 +1,57 @@
+section{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+.grün{
+    background-color: greenyellow;
+    animation: move .7s  infinite alternate ease-in-out;
+}
+
+.lila{
+    background-color: purple;
+    animation: move .7s .1s  infinite alternate ease-in-out;
+}
+
+.gelb{
+    background-color: yellow;
+    animation: move .7s .3s  infinite alternate ease-in-out;
+}
+
+.rot{
+    background-color: red;
+    animation: move .7s .5s  infinite alternate ease-in-out;
+}
+
+.pink{
+    background-color: pink;
+    animation: move .7s .7s  infinite alternate ease-in-out;
+}
+
+
+
+
+
+
+@keyframes move{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(-60px);
+    }
+}
+
