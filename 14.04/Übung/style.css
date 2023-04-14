@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+
+.zindex {
+  position: relative;
+  margin-bottom: 300px;
+}
+
+.zindex div {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+.zindex div:nth-child(1) {
+  background-color: red;
+  z-index: 1;
+}
+
+.zindex div:nth-child(2) {
+  background-color: blue;
+  left: 20px;
+  top: 10px;
+  z-index: 2;
+}
+
+.zindex div:nth-child(3) {
+  background-color: purple;
+  left: 40px;
+  top: 20px;
+  z-index: 3;
+}
+
+/* Click and hold */
+
+.click {
+  background-color: rgb(189, 189, 189);
+  height: 150px;
+  position: relative;
+}
+
+.pink,
+.blue {
+  position: absolute;
+  bottom: 20px;
+}
+
+.pink {
+  background-color: pink;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  left: 0;
+
+  transition: 1s ease-in-out;
+}
+
+.blue {
+  background-color: blue;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+
+  left: 140px;
+
+  transition: 1s 1s ease-in-out;
+}
+
+.click:active .pink {
+  left: 44px;
+}
+
+.click:active .blue {
+  left: 80%;
+}
+
+/* Slide */
+
+.slide {
+  background: url(https://images.unsplash.com/photo-1612900631807-6e32af134ff7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80)
+    no-repeat center;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.441);
+  position: absolute;
+
+  bottom: -500px;
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-in-out;
+  color: white;
+  font-size: 30px;
+}
+
+.slide:hover .overlay {
+  bottom: 0;
+}
+
+/* Balls */
+
+.balls {
+  height: 300px;
+  width: 300px;
+  position: relative;
+}
+
+.balls div {
+  height: 20%;
+  width: 20%;
+  background-color: red;
+  border-radius: 50px;
+  position: absolute;
+  animation: move 4s infinite;
+}
+
+.balls .eins {
+  animation-delay: 0;
+}
+
+.balls .zwei {
+  animation-delay: 1s;
+}
+.balls .drei {
+  animation-delay: 2s;
+}
+.balls .vier {
+  animation-delay: 3s;
+}
+
+@keyframes move {
+  0% {
+    background-color: green;
+  }
+  25% {
+    background-color: orange;
+    transform: translateX(200px);
+  }
+  50% {
+    background-color: aqua;
+    transform: translate(200px, 200px);
+  }
+  75% {
+    background-color: purple;
+    transform: translateY(200px);
+  }
+  100% {
+    background-color: brown;
+  }
+}
+
+/* Perspektive */
+
+.perspektive{
+    perspective: 1000px;
+}
+
+.perspektive div{
+    height: 100px;
+    width: 300px;
+    margin: -10px;
+    padding: 10px;
+
+    transform: rotateY(-20deg);
+
+    position: relative;
+
+    transition: all 0.5s;
+}
+
+.eins{
+    background-color: rgba(0, 0, 255, 0.482);
+}
+
+.zwei{
+    background-color: rgba(191, 255, 0, 0.482);
+}
+
+.drei{
+    background-color: rgba(255, 0, 0, 0.482);
+}
+
+.perspektive .eins:hover{
+    transform: rotateY(-5deg);
+    z-index: 1;
+    background-color: blue;
+}
+.perspektive .zwei:hover{
+    transform: rotateY(-5deg);
+    z-index: 1;
+    background-color: yellow;
+}
+.perspektive .drei:hover{
+    transform: rotateY(-5deg);
+    z-index: 1;
+    background-color: red;
+}
+
