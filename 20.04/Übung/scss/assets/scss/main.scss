@@ -1,0 +1,88 @@
+@import "variablen.scss";
+@import "mixin.scss";
+
+
+// ! ++++++++++ BASIC
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main {
+  padding: $padding30;
+  color: $thirdColor;
+}
+
+// ! ++++++++++ HEADER
+
+header {
+  color: $firstColor;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    font-size: 30px;
+  }
+  nav {
+    background-color: $secondColor;
+    a {
+      margin-left: 40px;
+      text-decoration: none;
+      &:nth-of-type(2):hover {
+        color: white;
+      }
+      &:nth-of-type(3):hover {
+        color: $thirdColor;
+      }
+    }
+  }
+}
+
+// ! ++++++++++ MAIN
+
+.imageGallery {
+  @include namedesMixin;
+  gap: $gap;
+  figure {
+    img {
+      width: 100%;
+    }
+    figcaption {
+      background: deepskyblue;
+      h2 {
+        @include textStyle(2rem, magenta ,black);
+        font-size: 40px;
+        &:hover {
+          color: yellow;
+          cursor: pointer;
+        }
+      }
+      p{
+        @include textStyle(1rem, black, yellow)
+      }
+    }
+  }
+}
+
+.extend{
+    h3{
+        color: purple;
+        font-size: 5rem;
+    }
+    p{
+        @extend h3;
+    }
+    
+}
+
+// @mixin bigCircle{
+//     width: 30vw;
+//     height: 30vw;
+//     border-radius: 50%;
+//     background-color: darkblue;
+// }
+
+.circle{
+    @include circle2(30vw, darkblue);
+}

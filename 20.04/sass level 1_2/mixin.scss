@@ -1,0 +1,54 @@
+// ! +++++ COLORS
+
+$darkblue:rgba(0, 0, 255, 0.678);
+
+// ! +++++ SIZE
+
+$rem1:1rem;
+
+
+// ! +++++ MIXIN
+
+@mixin header{
+    height: 6rem;
+	text-align: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	padding: 1.5rem;
+}
+
+@mixin fontSize1{
+    font-size: 1rem;
+}
+
+@mixin centered{
+    display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+
+// ! +++++ MOBILE
+
+@mixin mobile{
+
+    .section_images {
+    	display: flex;
+    	flex-flow: row wrap;
+	}
+
+	.section_text {
+    	width: 70%;
+	}
+
+	.aside {
+    	display: flex;
+    	flex-flow: row wrap;
+	}
+
+	.first_aside, .second_aside, .third_aside, .fourth_aside {
+    	width: 45%;
+    	margin: 0.5rem;
+	}
+
+}

@@ -1,0 +1,30 @@
+@mixin mobile{
+    .main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .aside {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .section,  .first_article, .second_article {
+        width: 30%;
+    }
+
+    .first_aside, .second_aside, .third_aside, .fourth_aside {
+        width: 45%;
+    }
+}
+
+@mixin footer{
+    height: 6rem;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1rem;
+    background-color: rgba(128, 128, 128, 0.658);
+    margin-top: 3rem;
+}

@@ -1,0 +1,100 @@
+// ! BASIC
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 62.5%;
+}
+
+
+$firstColor: #f4ff2b;
+$secondColor: #ff6600;
+$thirdColor: #a062e3;
+$fourthColor: #11f5e6;
+$white:white;
+$padding:2vw;
+
+// ! +++++ SECTION
+
+section {
+  width: 100vw;
+  height: 100vh;
+  background-image:
+    linear-gradient(
+    55deg,
+    $firstColor 12.5%,
+    $secondColor 12.5%,
+    $secondColor 25%,
+    $thirdColor 25%,
+    $thirdColor 37.5%,
+    $fourthColor 37.5%,
+    $fourthColor 50%,
+    $firstColor 50%,
+    $firstColor 62.5%,
+    $secondColor 62.5%,
+    $secondColor 75%,
+    $thirdColor 75%,
+    $thirdColor 87.5%,
+    $fourthColor 87.5%,
+    $fourthColor 100%
+  );
+  .plus{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: $padding;
+  }
+  .ball{
+    position: absolute;
+    left: 80vw;
+    top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 20rem;
+    background-color: $firstColor;
+    color: $white;
+    h2{
+        font-size: 15rem;
+    }
+  }
+  .text{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        font-size: 30rem;
+        color: $white;
+    }
+    h2{
+        font-size: 20rem;
+        color: $white;
+    }
+  }
+  .icons{
+    width: 100%;
+    height: 20vh;
+    padding-right: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  i{
+    margin: 0 1rem;
+  }
+}
+
+

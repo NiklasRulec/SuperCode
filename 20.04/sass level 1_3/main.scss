@@ -1,0 +1,67 @@
+// ! +++++ BASIC
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$size:100px;
+
+// ! +++++ MIXIN
+
+@mixin bgc($background){
+    background: $background;
+}
+
+@mixin size($width,$height,$border-radius){
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+}
+
+@mixin move ($delay) {
+    animation: move 4s 1s infinite ease-in-out;
+    animation-delay: $delay;
+}
+
+// ! +++++ SECTION
+
+section{
+    width: 100vw;
+    height: 50vh;
+    border-top: 5px solid gray;
+    .container{
+        width: 100%;
+        height: 100%;
+        .ball1{
+            @include bgc(red);
+            @include size($size,$size,$size);
+            @include move (0s);
+        }
+        .ball2{
+            @include bgc(blue);
+            @include size($size,$size,$size);
+            @include move (.5s);
+        }
+        .ball3{
+            @include bgc(yellow);
+            @include size($size,$size,$size);
+            @include move (1s);
+        }
+    }
+}
+
+// ! +++++ ANIMATION
+
+@keyframes move{
+
+    0%{
+        transform: translateX(0vw);
+    }
+    50%{
+        transform: translateX(95vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}

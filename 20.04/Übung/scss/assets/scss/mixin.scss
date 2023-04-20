@@ -1,0 +1,23 @@
+@mixin zentriert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin namedesMixin {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@mixin textStyle($fontSize, $color, $background) {
+  font-size: $fontSize;
+  color: $color;
+  background: $background;
+}
+
+@mixin circle2($size, $bgColor) {
+  width: $size;
+  height: $size;
+  background-color: $bgColor;
+  border-radius: 50%;
+}
