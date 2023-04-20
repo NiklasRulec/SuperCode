@@ -92,6 +92,7 @@ header {
   }
   i {
     margin: 0 1rem;
+    font-size: 3rem;
   }
 }
 
@@ -165,7 +166,7 @@ footer {
     $fourthColor 87.5%,
     $fourthColor 100%
   );
-  p{
+  p {
     color: $white;
     font-size: 2rem;
   }

@@ -70,6 +70,7 @@ header .icons {
 }
 header i {
   margin: 0 1rem;
+  font-size: 3rem;
 }
 
 main .about, main .services {
