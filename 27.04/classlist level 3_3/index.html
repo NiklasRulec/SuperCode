@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="background">
+      <form onsubmit="return false">
+        <label for="range">Red</label>
+        <input
+          onchange="changeBackground()"
+          type="range"
+          id="red"
+          name="red"
+          min="0"
+          max="255"
+          value="0"
+          step="1"
+        />
+        <label for="range">Green</label>
+        <input
+          onchange="changeBackground()"
+          type="range"
+          id="green"
+          name="green"
+          min="0"
+          max="255"
+          value="0"
+          step="1"
+        />
+        <label for="range">Blue</label>
+        <input
+          onchange="changeBackground()"
+          type="range"
+          id="blue"
+          name="blue"
+          min="0"
+          max="255"
+          value="0"
+          step="1"
+        />
+      </form>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
