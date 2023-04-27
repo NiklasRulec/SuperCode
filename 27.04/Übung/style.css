@@ -1,0 +1,47 @@
+img {
+  max-width: 100%;
+}
+
+nav img {
+  height: 25px;
+}
+
+nav img:hover {
+  transform: scale(1.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: black;
+}
+
+body {
+  transition: 0.3s;
+}
+
+.dark {
+  background-color: #333;
+  color: white;
+  transition: 0.3s;
+}
+
+.dark nav a {
+  color: white;
+}
+
+.big {
+  font-size: 30px;
+  color: red;
+}
+
+.remove {
+  font-size: 50px;
+  background-color: greenyellow;
+}

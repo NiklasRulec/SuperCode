@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+        </div>
+        <img
+          onclick="getDark()"
+          src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
+          alt=""
+        />
+      </nav>
+    </header>
+    <main>
+      <section>
+        <form onsubmit="getInputValue(); return false">
+          <label for="textid">Name</label>
+          <input type="text" id="textid" class="name" />
+          <br />
+          <label for="num">Age</label>
+          <input type="text" id="num" class="num" />
+          <br />
+          <label for="range">Range</label>
+          <input type="range" max="10" min="0" id="range" class="range" />
+          <br />
+          <label for="checkbox">Happy?</label>
+          <input type="checkbox" id="checkbox" class="checkbox" />
+          <br />
+          <label for="bday">Bday</label>
+          <input type="date" id="bday" class="bday" />
+          <br />
+          <input type="submit" />
+        </form>
+        <p class="output"></p>
+      </section>
+      <section>
+        <h2 onclick="addClass()" class="add">Add Class</h2>
+        <h3 onclick="removeClass()" class="remove">Remove Class</h3>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
