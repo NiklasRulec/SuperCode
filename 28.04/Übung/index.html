@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="wdh">
+      <form onsubmit="checkVal(); return false">
+        <input type="text" id="text" />
+        <input type="checkbox" id="checkbox" />
+      </form>
+      <br />
+      <h5>Mir kann man was hinzufügen</h5>
+      <button class="add" onclick="addClass()">Class hinzufügen</button>
+      <button class="remove" onclick="removeClass()">Class entfernen</button>
+      <button class="toggle" onclick="toggleClass()">Änder mich</button>
+    </section>
+    <section>
+      <form onsubmit="checkNumber(); return false">
+        <input class="num" type="text" />
+        <input type="submit" />
+        <p class="outputifelse"></p>
+      </form>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
