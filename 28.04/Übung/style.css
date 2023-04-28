@@ -3,3 +3,30 @@
   font-weight: bold;
   color: yellow;
 }
+
+label {
+  display: block;
+}
+
+.login {
+  background-color: lightgray;
+  padding: 20px;
+  margin: 20px;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login form input {
+  margin-bottom: 10px;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}

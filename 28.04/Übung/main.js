@@ -52,3 +52,28 @@ function checkNumber() {
     output.innerHTML = "Die Zahl ist negativ";
   }
 }
+
+// * Log In User
+
+let userName = "marzio";
+let password = "hallo";
+
+console.log(window);
+console.log(window.location);
+console.log(window.location.href);
+
+function checkUserData() {
+  let loginUserName = document.querySelector("#username").value;
+  let loginUserPass = document.querySelector("#password").value;
+  const outputLogin = document.querySelector(".login-feedback");
+
+  // && =
+  // || =
+
+  if (userName == loginUserName && password == loginUserPass) {
+    outputLogin.innerHTML = "<p class='green'> Login war erfolgreich</p>";
+    window.location.replace("./secret.html");
+  } else {
+    outputLogin.innerHTML = "<p class='red'> Login war nicht erfolgreich</p>";
+  }
+}
