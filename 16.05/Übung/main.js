@@ -124,3 +124,12 @@ imgSrcArray.forEach((imgSrc) => {
   const imgHtml = `<img src=${imgSrc} alt=""random image">`;
   document.body.insertAdjacentHTML("afterbegin", imgHtml);
 });
+
+// document.body.querySelector
+ul.querySelector;
+
+// querySelector -> guckt nach "unten"
+// querySelectorAll
+// closest -> guckt nach "oben"
+// insertAdjacentHtml
+// setAttribut
