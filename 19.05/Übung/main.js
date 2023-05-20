@@ -25,7 +25,7 @@ const macbook = new Laptop("Apple", "Macbook Air M2", 2022, ["M2", "16gb"]);
 
 macbook.description();
 
-// ! ++++++++++ Class Constructor ES6 ++++++++++
+// ! +++++++++*+ Class Constructor ES6 ++++*++++++
 
 class Handy {
   constructor(herstellerParam, modelParam, jahrParam) {
