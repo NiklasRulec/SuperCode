@@ -1,6 +1,6 @@
 let count;
 let seconds;
-const timeDisplay = document.querySelector("#time"); // HTML-Element zur Anzeige des Timers
+const timeDisplay = document.querySelector("#time");
 const minutesInput = document.querySelector("#minutes");
 
 // ! ++++++++++ TIMER ++++++++++
@@ -17,12 +17,21 @@ function timerFunction() {
     }
     displayTimeLeft(seconds);
     seconds--;
+    console.log(seconds);
   }, 1000);
+
+  // ! ++++++++++ TIMER RESTART ++++++++++
+  function timerRestart() {
+    count = setInterval(() => {
+      if (seconds <= 0) {
+        clearInterval(count);
+        return;
+      }
+      displayTimeLeft(seconds);
+      seconds--;
+    }, 1000);
+  }
 }
-
-// ! ++++++++++ TIMER RESTART ++++++++++
-
-function restartTimer() {}
 
 // ! ++++++++++ TIMER DISPLAY ++++++++++
 
@@ -46,5 +55,5 @@ function pauseMinCountdown() {
 }
 
 function restartMinCountdown() {
-  restartTimer();
+  if (timerFunction) timerRestart();
 }
